@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ContentViewUpdate.DemoPage">
+	<ContentPage.Content>
+
+		<StackLayout Padding="40">
+			<Button Clicked="UpdateContent" Text="Update" />
+			<Button Clicked="HideContent" Text="Hide" />
+			<ContentView x:Name="testContent" />
+		</StackLayout>
+
+	</ContentPage.Content>
+</ContentPage>
