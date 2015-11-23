@@ -15,18 +15,20 @@ namespace ContentViewUpdate
             InitializeComponent();
         }
 
-        void UpdateContent (object sender, EventArgs e)
-        {            
-            this.testContent.Content = new Label { Text = $"Hello {count++}" };
+        void ShowContent (object sender, EventArgs e)
+        {   
+            testContent.Content = new Label { Text = $"Hello {count++}" };
 
-            this.testContent.IsVisible = true;
+            testContent.Opacity = 0;
+            testContent.IsVisible = true;
+
+            testContent.FadeTo(1, 300);
         }
 
         void HideContent (object sender, EventArgs e)
         {
             this.testContent.IsVisible = false;
         }
-
     }
 }
 

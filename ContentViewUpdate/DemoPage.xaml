@@ -3,9 +3,9 @@
 	<ContentPage.Content>
 
 		<StackLayout Padding="40">
-			<Button Clicked="UpdateContent" Text="Update" />
+			<Button Clicked="ShowContent" Text="Show" />
 			<Button Clicked="HideContent" Text="Hide" />
-			<ContentView x:Name="testContent" />
+			<ContentView x:Name="testContent" IsVisible="false" />
 		</StackLayout>
 
 	</ContentPage.Content>
