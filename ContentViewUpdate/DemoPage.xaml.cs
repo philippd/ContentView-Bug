@@ -15,7 +15,7 @@ namespace ContentViewUpdate
             InitializeComponent();
         }
 
-        async void UpdateContent (object sender, EventArgs e)
+        void UpdateContent (object sender, EventArgs e)
         {            
             this.testContent.Content = new Label { Text = $"Hello {count++}" };
 
